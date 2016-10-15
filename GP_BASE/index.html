@@ -1,0 +1,80 @@
+<!DOCTYPE HTML>
+<html lang="ja" xmlns:og="http://ogp.me/ns#" xmlns:mixi="http://mixi-platform.com/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=0.5,minimum-scale=0.5,maximum-scale=0.5,user-scalable=no">
+<title>GP BASE</title>
+<link href="assets/css/gpbase.css" rel="stylesheet">
+<script src="assets/js/jquery-1.7.1.min.js"></script>
+<script src="assets/js/gpbase.js"></script>
+</head>
+	<body>
+	<div id="gpinput">
+		<h2>INPUT YOUR DATA</h2>
+		<div class="operator">
+			<h3>BUILDER<span class="pentagon"></span></h3>
+			<div class="name">
+				<h4>NAME</h4>
+				<p><input type="text" id="builder" placeholder="BUILDER NAME" value=""></p>
+			</div>
+			<h3>FIGHTER<span class="pentagon"></span></h3>
+			<div class="name">
+				<h4>NAME</h4>
+				<p><input type="text" id="fighter" placeholder="FIGHTER NAME" value=""></p>
+			</div>
+			<h3>GUNPLA<span class="pentagon"></span></h3>
+			<div class="name">
+				<h4>MODEL No.</h4>
+				<p><input type="text" id="plano" placeholder="MODEL NAME" value=""></p>
+			</div>
+			<div class="name">
+				<h4>NAME</h4>
+				<p><input type="text" id="planame" placeholder="GUNPLA NAME" value=""></p>
+			</div>
+			<div class="name">
+				<h4>NAME</h4>
+				<p><input type="checkbox" id="scratch" value=""><label for="scratch">scratch</label></p>
+			</div>
+		</div>
+
+		<p class="enter"><a>ENTER</a></p>
+		<p class="logo"><img src="assets/image/ppseLogo.png"></p>
+	</div>
+
+	<div id="gpmain">
+		<h2>OPERATOR</h2>
+		<div class="operator">
+			<h3>BUILDER<span class="pentagon"></span></h3>
+			<div class="name">
+				<h4>NAME</h4>
+				<p class="builderoutput"></p>
+			</div>
+			<h3>BUILDER<span class="pentagon"></span></h3>
+			<div class="name">
+				<h4>NAME</h4>
+				<p class="fighteroutput"></p>
+			</div>
+		</div>
+		<h2>GUNPLA</h2>
+		<div class="gunpla">
+			<div class="data">
+				<h3>SCALE<span class="pentagon"></span></h3>
+				<p>1/144</p>
+			</div>
+			<div class="data">
+				<h3>CLASS<span class="pentagon"></span></h3>
+				<p><span class="model">HG</span><span class="scratchoutput">(+scratch)</span></p>
+			</div>
+			<div class="data">
+				<h3>MODEL<span class="no">No.</span><span class="pentagon"></span></h3>
+				<p class="msno planooutput"></p>
+			</div>
+			<div class="msname">
+				<h4>NAME</h4>
+				<p class="planameoutput"></p>
+			</div>
+		</div>
+		<p class="logo"><img src="assets/image/ppseLogo.png"></p>
+	<!-- /wrap --></div>
+	</body>
+</html>
