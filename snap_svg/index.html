@@ -4,14 +4,39 @@
   <title>SVG Sample</title>
   <script src="snap.svg-min.js"></script>
 </head>
-<body>
-  <svg id="svgSample01" style="width:60px;height:60px;"></svg>
-  <script src="snap.svg-min.js"></script>
-  <script>Snap("#svgSample01").circle(30, 30, 30).attr({fill:"#F00"});</script>
+<body style="height:1000px;">
+  <div>
+    <svg id="svgSample01" style="width:60px;height:60px;"></svg>
+    <script src="snap.svg-min.js"></script>
+    <script>Snap("#svgSample01").circle(30, 30, 30).attr({fill:"#F00"});</script>
+  </div>
 
-  <svg id="svgSample02" style="width:60px;height:60px;"></svg>
-  <script src="snap.svg-min.js"></script>
-  <script>Snap("#svgSample02").circle(30, 30, 30).attr({fill:"#F00"});</script>
+  <div>
+    <svg id="svgSample02" style="width:120px;height:60px;">
+      <circle cx="30" cy="30" r=30 class="circle01"></circle>
+    </svg>
+    <script src="snap.svg-min.js"></script>
+    <script>
+
+      var $circle = Snap( '.circle01' );
+
+      function anim () {
+
+        // cx の値を 0 にリセット
+        $circle.attr( { cx: -30 } );
+
+        // cx の値を 3 秒かけて 500 にアニメーションする
+        $circle.animate( {
+          cx: 180
+        }, 3000, function () {
+          anim();
+        } );
+
+      };
+
+      anim();
+    </script>
+  </div>
 
 
 </body>
